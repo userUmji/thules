@@ -1,0 +1,602 @@
+@import "variable", "reset", "responsive";
+
+html {
+  scroll-behavior: smooth;
+}
+//####################################창업안내 섹션######################################
+.main-img {
+  margin-top: 90px;
+  height: 350px;
+  background-image: url(../images/subPage_startup/sub-franchise-miavisual.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: $accent-font;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; // 수직 가운데
+  align-items: center; // 수평 가운데
+  text-align: center;
+  animation: aaa 30s infinite;
+
+  @keyframes aaa {
+    0% {
+      background-position: top;
+    }
+
+    50% {
+      background-position: bottom;
+    }
+
+    100% {
+      background-position: top;
+    }
+
+  }
+
+  h1 {
+    font-size: $title-font-size;
+  }
+}
+
+.mid-nav {
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    li {
+      position: relative;
+      display: inline-block;
+
+
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: $main-color;
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+      }
+
+      &::before {
+        top: 0;
+        transform-origin: left;
+      }
+
+      &::after {
+        bottom: 0;
+        transform-origin: right;
+      }
+
+      &:hover::before,
+      &:hover::after {
+        transform: scaleX(1);
+      }
+
+      a {
+        line-height: 5;
+        text-decoration: none;
+        color: inherit;
+        display: inline-block;
+
+      }
+    }
+  }
+}
+
+.sub-main-bottom {
+  background-color: $main-color;
+  height: 350px;
+
+  .inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .sub-main-bottom-text {
+      h1 {
+        color: white;
+        font-size: 50px;
+      }
+
+      p {
+        margin-top: 40px;
+        color: white;
+      }
+    }
+
+    .sub-main-bottom-img {
+      margin-top: 50px;
+    }
+  }
+}
+
+#renewal {
+  margin-top: 10px;
+
+  .inner {
+    .renewal-mid-text {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .renewal-h1-1 {
+      text-align: center;
+      font-size: $title-font-size;
+      padding-left: 30px;
+      color: $main-color;
+      margin-top: 60px;
+    }
+
+    .renewal-top {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 90px;
+    }
+
+    .renewal-bottom {
+      justify-content: space-between;
+      display: flex;
+      margin-top: 20px;
+    }
+
+    .renewal-h1-2 {
+      font-size: 40px;
+      border-left: 10px solid $main-color;
+      padding-left: 30px;
+      margin-top: 200px;
+      color: $main-color;
+    }
+
+    .mid-logo {
+      display: flex;
+      justify-content: center;
+      margin-top: 60px;
+    }
+
+    .line {
+      width: 40%;
+      height: 5px;
+      background-color: $main-color;
+      margin-left: 400px;
+      margin-top: 60px;
+      transform-origin: center;
+      animation: aniline 10s infinite;
+    }
+
+    @keyframes aniline {
+      0% {
+        transform: scaleX(0);
+      }
+
+      100% {
+        transform: scaleX(1);
+      }
+
+    }
+
+    .renewal-mid-logo-text {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .renewal-mid-p {
+      margin-top: 40px;
+    }
+
+    .renewal-h1-3 {
+      font-size: 40px;
+      border-left: 10px solid $main-color;
+      padding-left: 30px;
+      margin-top: 200px;
+      color: $main-color;
+    }
+
+    .renewal-bottom-pakage-wrap {
+      display: flex;
+      margin-top: 60px;
+      justify-content: space-between;
+      text-align: center;
+
+
+
+    }
+  }
+}
+
+#procedure {
+
+  //################################타이틀이랑 설명모아둠
+  .procedure-title {
+    text-align: center;
+    font-size: $title-font-size;
+    color: $main-color;
+  }
+
+  .procedure-title2 {
+    margin-left: 220px;
+    font-size: 40px;
+    border-left: 10px solid $main-color;
+    padding-left: 30px;
+    margin-top: 200px;
+    color: $main-color;
+  }
+
+
+  .table-text {
+    text-align: center;
+    color: #6f6f6fdd;
+    margin-top: 60px;
+    font-size: $small-font-size;
+  }
+
+  //###################################창업 절차###############################
+  .steps {
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    width: 80%;
+
+  }
+
+  .step-box {
+    width: 30%; height: 190px;
+    min-width: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+    background-color: white;
+    border: 1px solid #ddd;
+  }
+
+  .step-box:hover .step-body {
+    font-size: $normal-font-size;
+  }
+
+  .step-header {
+    padding: 20px 15px;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    color: white;
+  }
+
+  .gray {
+    background-color: #bbbbbb;
+  }
+
+  .green-light {
+    background-color: #52a474;
+  }
+
+  .green-dark {
+    background-color: $main-color;
+  }
+
+  .step-body {
+    padding: 20px 15px;
+    color: #333;
+    font-size: $small-font-size;
+    text-align: center;
+    background-color: #fff;
+    transition: .3s;
+  }
+
+
+  //#############################창업 비용
+  table {
+    margin: auto;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 10px;
+    width: 75%;
+
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+
+
+
+    thead {
+      background-color: $main-color;
+      color: #fff;
+    }
+
+    th,
+    td {
+      padding: 16px;
+      border: 1px solid #ccc;
+      text-align: center;
+      font-size: 15px;
+
+
+    }
+
+    tfoot {
+      background-color: #fff5da;
+      font-weight: bold;
+    }
+  }
+
+
+}
+
+#review {
+  .review-title {
+    text-align: center;
+    font-size: $title-font-size;
+    color: $main-color;
+  }
+
+  .inner {
+    .review-card1 {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 80px;
+
+      .review-card1-text-wrap {
+        position: relative;
+
+        .review-card1-box1 {
+          background-color: $main-color;
+          ;
+          padding: 20px;
+          text-align: center;
+          color: white;
+          border-radius: 10px;
+
+          img {
+            position: absolute;
+            top: -90px;
+            left: 460px;
+            animation: asd 4s infinite;
+            transform-origin: center;
+          }
+
+          @keyframes asd {
+            0% {
+              transform: rotate(0deg);
+            }
+
+            25% {
+              transform: rotate(10deg);
+            }
+
+            50% {
+              transform: rotate(-10deg);
+            }
+
+            75% {
+              transform: rotate(0deg);
+            }
+          }
+
+        }
+
+        .review-card1-text {
+          margin-top: 20px;
+
+          p {
+            color: $main-color;
+          }
+        }
+      }
+
+    }
+
+    .review-card2 {
+      display: flex;
+      margin-top: 150px;
+      justify-content: space-between;
+
+
+      .review-card2-text-wrap {
+        position: relative;
+
+        .review-card2-box1 {
+          background-color: $main-color;
+          ;
+          padding: 20px;
+          text-align: center;
+          color: white;
+          border-radius: 10px;
+
+          img {
+            position: absolute;
+            top: -90px;
+            left: -50px;
+            animation: asd 4s infinite;
+            transform-origin: center;
+          }
+
+          @keyframes asd {
+            0% {
+              transform: rotate(0deg);
+            }
+
+            25% {
+              transform: rotate(10deg);
+            }
+
+            50% {
+              transform: rotate(-10deg);
+            }
+
+            75% {
+              transform: rotate(0deg);
+            }
+          }
+
+        }
+
+        .review-card2-text {
+          margin-top: 50px;
+
+          p {
+            color: $main-color;
+          }
+        }
+      }
+
+    }
+
+    .review-card3 {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 150px;
+
+      .review-card3-text-wrap {
+        position: relative;
+
+        .review-card3-box1 {
+          background-color: $main-color;
+          ;
+          padding: 20px;
+          text-align: center;
+          color: white;
+          border-radius: 10px;
+
+          img {
+            position: absolute;
+            top: -90px;
+            left: 330px;
+            animation: asd 4s infinite;
+            transform-origin: center;
+          }
+
+          @keyframes asd {
+            0% {
+              transform: rotate(0deg);
+            }
+
+            25% {
+              transform: rotate(10deg);
+            }
+
+            50% {
+              transform: rotate(-10deg);
+            }
+
+            75% {
+              transform: rotate(0deg);
+            }
+          }
+
+        }
+
+        .review-card3-text {
+          margin-top: 50px;
+
+          p {
+            color: $main-color;
+          }
+        }
+      }
+
+    }
+
+
+  }
+}
+
+#inquiry {
+  position: relative;
+
+  .inquiry-bg {
+    position: absolute;
+  }
+
+  .inner {
+    .inquiry-title {
+      text-align: center;
+      font-size: $title-font-size;
+      color: $main-color;
+    }
+
+    .inquiry-card-wrap {
+      margin-top: 60px;
+      margin-left: 200px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .inquiry-card1 {
+        background-color: rgb(255, 255, 255);
+        width: 80%;
+        padding: 20px;
+        border-radius: 30px;
+        box-shadow: 2px 1px 3px 0px rgba(128, 128, 128, 0.61);
+      }
+
+      .inquiry-card2 {
+        background-color: rgb(255, 255, 255);
+        width: 80%;
+        padding: 20px;
+        border-radius: 30px;
+        box-shadow: 2px 1px 3px 0px rgba(128, 128, 128, 0.61);
+      }
+
+      .inquiry-card3 {
+        background-color: rgb(255, 255, 255);
+        width: 80%;
+        padding: 20px;
+        border-radius: 30px;
+        box-shadow: 2px 1px 3px 0px rgba(128, 128, 128, 0.61);
+      }
+
+      .inquiry-card4 {
+        background-color: rgb(255, 255, 255);
+        width: 80%;
+        padding: 40px 20px;
+        border-radius: 30px;
+        box-shadow: 2px 1px 3px 0px rgba(128, 128, 128, 0.61);
+      } 
+      > div > input{
+        width: 80%;
+        margin-left: 10px;
+      }
+    }
+
+    .inquiry-bottom {
+      text-align: center;
+      margin-top: 10px;
+
+      .inquiry-ck {
+        display: block;
+        margin-top: 50px;
+        input[type="checkbox"]{
+          transform: scale(1.2);
+          margin-right: 3px;
+        }
+      }
+
+      .inquiry-btn {
+        margin-top: 15px;
+        background-color: $main-color;
+        width: 15%;
+        padding: 10px;
+        color: white;
+        border-radius: 20px;
+        transition: 0.3s;
+      }
+
+      .inquiry-btn:hover {
+        background-color: $sub-color;
+        color: $main-color;
+      }
+
+    }
+
+  }
+
+}
