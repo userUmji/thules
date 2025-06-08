@@ -5,8 +5,35 @@ window.onload = function () {
   let list = [];
   let markers = [];
   let infowindows = [];
+  // 찾은 매장을 화면에 보여줌
+  function list_view() {
+    result_list.innerHTML = "";
+    // 화면에 찾은 매장을 보여줌
+    for (item of list) {
+      let li = document.createElement("li");
+      li.innerHTML = `
+          <div>
+          <span class="location-icon"></span>
+          <h3 class="store-name">${item.name}</h3>
+          <p class="store-location">${item.location}</p>
+          <p class="store-call">${item.call}</p>
+          </div>
+          `;
+      result_list.appendChild(li);
+    }
+    result_list = document.querySelector(".result-list");
+  }
+  var mapContainer = document.getElementById('map'),
+    mapOption = {
+      center: new kakao.maps.LatLng(37.566826, 126.9786567),
+      level: 3
+    };
+  var map = new kakao.maps.Map(mapContainer, mapOption);
+  var geocoder = new kakao.maps.services.Geocoder();
+  //var ps = new kakao.maps.services.Places();
+  var infowindow = new kakao.maps.InfoWindow({ zIndex: 1 });
   // 메인페이지에서 검색한 값이 있으면
-  if (test != "" & test.trim() != "") {
+  if (test != "" && test.trim() != "") {
     for (store in stores) {
       for (st of stores[store]) {
         if (st.name.includes(test) || st.location.includes(test)) {
@@ -21,15 +48,6 @@ window.onload = function () {
       result_list.firstChild.classList.add("active");
     }
   }
-  var mapContainer = document.getElementById('map'),
-    mapOption = {
-      center: new kakao.maps.LatLng(37.566826, 126.9786567),
-      level: 3
-    };
-  var map = new kakao.maps.Map(mapContainer, mapOption);
-  var geocoder = new kakao.maps.services.Geocoder();
-  //var ps = new kakao.maps.services.Places();
-  var infowindow = new kakao.maps.InfoWindow({ zIndex: 1 });
 
 
   // 검색하기
@@ -43,7 +61,7 @@ window.onload = function () {
     if (input_search.value != null && input_search.value.trim() != "") {
       for (store in stores) {
         for (st of stores[store]) {
-          if (st.name.includes(input_search.value)) {
+          if (st.name.includes(input_search.value) || st.location.includes(input_search.value)) {
             list.push(st);
           }
         }
@@ -181,22 +199,7 @@ window.onload = function () {
       result_list.firstChild.classList.add("active");
     }
   })
-  // 찾은 매장을 화면에 보여줌
-  function list_view() {
-    // 화면에 찾은 매장을 보여줌
-    for (item of list) {
-      let li = document.createElement("li");
-      li.innerHTML = `
-          <div>
-          <span class="location-icon"></span>
-          <h3 class="store-name">${item.name}</h3>
-          <p class="store-location">${item.location}</p>
-          <p class="store-call">${item.call}</p>
-          </div>
-          `;
-      result_list.appendChild(li);
-    }
-  }
+
   // 지도에 위치 표시해주는 함수
   function displayMarkers(address) {
     // 기존 마커 제거
@@ -206,7 +209,6 @@ window.onload = function () {
     // 기존 인포윈도우 닫기
     infowindows.forEach(iw => iw.close());
     infowindows = [];
-
     geocoder.addressSearch(address.location, function (result, status) {
       if (status === kakao.maps.services.Status.OK) {
         let coords = new kakao.maps.LatLng(result[0].y, result[0].x);
