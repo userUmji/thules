@@ -92,26 +92,32 @@ header.active {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
-header.active #logo {
-  color: #1A4A31 !important;
-}
-header.active .gnb-left .primary-menu > li:first-child > a {
-  color: #FFCB4E !important;
-}
-header.active .primary-menu > li > a {
-  color: #8E8E8E !important;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-header.active .primary-menu > li > a:hover, header.active .primary-menu > li > a.active {
-  color: black !important;
-}
 header.active .inner .container > .hamburger i,
 header.active .inner .container > .reading-glasses i {
   color: #8E8E8E;
 }
+header.active .inner .container nav .gnb #logo {
+  color: #1A4A31;
+}
+header.active .inner .container nav .gnb .gnb-left .primary-menu > li:first-child > a {
+  color: #FFCB4E;
+}
+header.active .inner .container nav .gnb .primary-menu > li > a {
+  color: #8E8E8E;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
 header.active .moblie-sec-wrap > button {
-  color: #8E8E8E !important;
+  color: #8E8E8E;
+}
+header:hover {
+  background-color: #1A4A31;
+}
+header:hover .inner .container nav .gnb #logo {
+  color: white;
+}
+header:hover .inner .container nav .gnb .primary-menu > li > a {
+  color: white;
 }
 header .search-header {
   position: absolute;

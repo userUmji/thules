@@ -154,6 +154,40 @@ menus = {
       allergy: "대두,밀",
       gram: 131,
     },
+    bread10: {
+      best: false,
+      type: 10,
+      sub_type: "식빵",
+      url: "images/menuImg/menu-img09.png",
+      name: "고메 버터 식빵",
+      en_name: "Gome Butter Bread",
+      info: "브라운버터를 넣어 버터의 풍미를 올린 촉촉하고 부드러운 빵에 바삭하고 고소한 풍미의 패스트리가 만나 껍질까지 맛있게 먹을 수 있는 맛있는 식빵",
+      kcal: 1060,
+      sugar: 26,
+      protein: 27,
+      saturatedFat: 28,
+      sodium: 1240,
+      caffeine: 0,
+      allergy: "계란, 우유, 밀, 아황산류 함유",
+      gram: 291
+    },
+    bread11: {
+      best: false,
+      type: 11,
+      sub_type: "식빵",
+      url: "images/menuImg/menu-img10.png",
+      name: "호박 패스트리 식빵",
+      en_name: "Pumpkin Pastry Bread",
+      info: "호박의 고소한 맛을 살린 바삭한 패스트리식빵",
+      kcal: 1235,
+      sugar: 40,
+      protein: 31,
+      saturatedFat: 36,
+      sodium: 1890,
+      caffeine: 0,
+      allergy: "계란, 우유, 대두, 밀, 아황산류",
+      gram: 358
+    },
   },
   cakes: {
     cake1: {
@@ -291,6 +325,74 @@ menus = {
       caffeine: 0,
       allergy: "계란,우유,대두,밀",
       gram: 690,
+    },
+    cake9: {
+      best: false,
+      type: 108,
+      sub_type: "대형케이크",
+      url: "images/menuImg/menu-cake09.png",
+      name: "5호 2단 초콜릿케이크",
+      en_name: "No. 5 2-tier chocolate cake",
+      info: "무언가 특별한 날에 함께 축하하고 싶을 때 좋은 초콜릿 케이크",
+      kcal: 9030,
+      sugar: 291,
+      protein: 183,
+      saturatedFat: 224,
+      sodium: 2350,
+      caffeine: 0,
+      allergy: "계란, 밀, 우유, 대두, 돼지고기 함유",
+      gram: 1930
+    },
+    cake10: {
+      best: false,
+      type: 109,
+      sub_type: "무스케이크",
+      url: "images/menuImg/menu-cake10.png",
+      name: "고구마 케이크 1호",
+      en_name: "Sweet Potato Cake No. 1",
+      info: "진한 고구마맛을 더하여 한층 풍미가 깊어진 부드러운 고구마케이크",
+      kcal: 1255,
+      sugar: 77,
+      protein: 18,
+      saturatedFat: 39,
+      sodium: 400,
+      caffeine: 0,
+      allergy: "계란, 우유, 대두, 밀, 돼지고기 함유",
+      gram: 465
+    },
+    cake11: {
+      best: false,
+      type: 110,
+      sub_type: "스페셜케이크",
+      url: "images/menuImg/menu-cake11.png",
+      name: "쇼콜라 갸또",
+      en_name: "Chocolat Gateau",
+      info: "초코&블랙초코 시트에 진한 가나슈 초콜릿을 샌드하고 가나슈 초콜릿으로 코팅한 초코케이크",
+      kcal: 2430,
+      sugar: 148,
+      protein: 29,
+      saturatedFat: 82,
+      sodium: 930,
+      caffeine: 0,
+      allergy: "계란, 우유, 대두, 밀, 돼지고기, 아황산류",
+      gram: 710
+    },
+    cake12: {
+      best: false,
+      type: 111,
+      sub_type: "파티용품",
+      url: "images/menuImg/menu-cake12.png",
+      name: "해피파티타임 스프링 폭죽",
+      en_name: "Happy Party Time Spring Firecrackers",
+      info: "축하하는 자리를 컬러풀한 꽃가루로 더욱 아름답게! 화약을 사용하지 않아 누구나 안전하게 사용 가능한 폭죽",
+      kcal: 0,
+      sugar: 0,
+      protein: 0,
+      saturatedFat: 0,
+      sodium: 0,
+      caffeine: 0,
+      allergy: "",
+      gram: 0
     }
   },
   deli: {
@@ -429,6 +531,57 @@ menus = {
       caffeine: 0,
       allergy: "계란, 우유, 땅콩, 대두, 밀, 쇠고기",
       gram: 178,
+    },
+    deli9: {
+      best: false,
+      type: 208,
+      sub_type: "샐러드",
+      url: "images/menuImg/menu-del09.png",
+      name: "머쉬룸 불고기 샐러드",
+      en_name: "Mushroom Bulgogi Salad",
+      info: "바삭하게 볶아낸 불고기, 새송이, 양파와 담백한 오리엔탈 드레싱에 눈꽃치즈를 더한 부드러운 어울림의 샐러드",
+      kcal: 185,
+      sugar: 9,
+      protein: 10,
+      saturatedFat: 4.2,
+      sodium: 610,
+      caffeine: 0,
+      allergy: "우유, 대두, 밀, 토마토, 쇠고기",
+      gram: 218
+    },
+    deli10: {
+      best: false,
+      type: 209,
+      sub_type: "샐러드",
+      url: "images/menuImg/menu-del10.png",
+      name: "불고기 분짜 누들 샐러드",
+      en_name: "Bulgogi Bun Cha Noodle Salad",
+      info: "잘 볶아낸 소불고기와 쌀면을 아삭한 무피클과 어우러낸 상큼한 분짜 샐러드",
+      kcal: 440,
+      sugar: 20,
+      protein: 15,
+      saturatedFat: 2,
+      sodium: 940,
+      caffeine: 0,
+      allergy: "땅콩, 대두, 밀, 아황산류, 쇠고기",
+      gram: 350
+    },
+    deli11: {
+      best: false,
+      type: 210,
+      sub_type: "간편식",
+      url: "images/menuImg/menu-del11.png",
+      name: "양송이 크림 스프",
+      en_name: "Mushroom Cream Soup",
+      info: "향긋한 양송이를 듬뿍 넣어 끓여낸 깊은 풍미의 크림 스프",
+      kcal: 240,
+      sugar: 7,
+      protein: 3,
+      saturatedFat: 16,
+      sodium: 350,
+      caffeine: 0,
+      allergy: "우유, 대두, 밀, 닭고기",
+      gram: 180
     }
   },
   deserts: {
@@ -568,6 +721,91 @@ menus = {
       allergy: "계란, 우유, 대두, 밀",
       gram: 30,
     },
+    desert9: {
+      best: false,
+      type: 408,
+      sub_type: "마카롱",
+      url: "images/menuImg/menu-desert09.png",
+      name: "더블치즈 뚱카롱",
+      en_name: "Dobule Cheese Dungcaron",
+      info: "에멘탈 치즈크림 사이에 고소한 버터 쿠키가 들어있는 마카롱",
+      kcal: 110,
+      sugar: 8,
+      protein: 2,
+      saturatedFat: 3.8,
+      sodium: 30,
+      caffeine: 0,
+      allergy: "계란, 우유, 대두, 밀, 쇠고기",
+      gram: 25
+    },
+    desert10: {
+      best: false,
+      type: 409,
+      sub_type: "마카롱",
+      url: "images/menuImg/menu-desert10.png",
+      name: "딸기우유 뚱카롱",
+      en_name: "Strawberry milk Dungcaron",
+      info: "풍성한 우유크림에 상큼한 딸기퓨레가 들어가 딸기 우유맛이 입안 가득 퍼지는 뚱카롱",
+      kcal: 110,
+      sugar: 11,
+      protein: 2,
+      saturatedFat: 3.6,
+      sodium: 35,
+      caffeine: 0,
+      allergy: "계란, 우유, 밀",
+      gram: 28
+    },
+    desert11: {
+      best: false,
+      type: 410,
+      sub_type: "잼",
+      url: "images/menuImg/menu-desert11.png",
+      name: "블루베리 크림치즈",
+      en_name: "Blueberry Cream Cheese",
+      info: "상큼한 블루베리와 부드럽고 고소한 크림치즈가 어우러진 새콤달콤 크림치즈 스프레드",
+      kcal: 185,
+      sugar: 11,
+      protein: 3,
+      saturatedFat: 8,
+      sodium: 270,
+      caffeine: 0,
+      allergy: "우유",
+      gram: 70
+    },
+    desert12: {
+      best: false,
+      type: 411,
+      sub_type: "아이스크림",
+      url: "images/menuImg/menu-desert12.png",
+      name: "초코 아이스캔디 바",
+      en_name: "Chocolate Ice Candy Bar",
+      info: "초콜릿의 달콤하고 진~한 맛을 시원하게 즐기는 초코 아이스캔디 바",
+      kcal: 122,
+      sugar: 13,
+      protein: 2,
+      saturatedFat: 3.7,
+      sodium: null,
+      caffeine: 0,
+      allergy: "우유, 대두",
+      gram: 70
+    },
+    desert13: {
+      best: false,
+      type: 412,
+      sub_type: "초콜릿",
+      url: "images/menuImg/menu-desert13.png",
+      name: "캐치! 티니핑 팝핑 톡톡 솜사탕",
+      en_name: "Catch! Tinyping Popping Cotton Candy",
+      info: "입안에 넣으면 달콤하게 녹으면서 팝핑 캔디가 톡톡 터지는 솜사탕",
+      kcal: 36,
+      sugar: 9,
+      protein: 0,
+      saturatedFat: 0,
+      sodium: 0,
+      caffeine: 0,
+      allergy: "대두, 우유",
+      gram: 9
+    },
   },
   drinks: {
     drink1: {
@@ -706,12 +944,47 @@ menus = {
       allergy: "복숭아",
       gram: 580,
     },
+    drink9: {
+      best: false,
+      type: 308,
+      sub_type: "우유",
+      url: "images/menuImg/menu-drink09.png",
+      name: "곰돌이 푸 신선한 우유",
+      en_name: "Winnie the Pooh Fresh Milk",
+      info: "원유의 영양과 신선함을 그대로 담고 있는 고소한 흰 우유",
+      kcal: 125,
+      sugar: 11,
+      protein: 5,
+      saturatedFat: 5,
+      sodium: 130,
+      caffeine: 0,
+      allergy: "우유 함유",
+      gram: 200
+    },
+    drink10: {
+      best: false,
+      type: 309,
+      sub_type: "과일주스",
+      url: "images/menuImg/menu-drink10.png",
+      name: "자몽 에이드",
+      en_name: "Grapefruit Ade",
+      info: "자몽과육과 탄산수를 넣어 톡 쏘는 맛이 일품인 자몽에이드",
+      kcal: 95,
+      sugar: 22,
+      protein: 0,
+      saturatedFat: null,
+      sodium: null,
+      caffeine: 0,
+      allergy: null,
+      gram: 390
+    },
   }
 }
 
+
 // 뚜레쥬르 매장 정보
 stores = {
-  서울:[
+  서울: [
     {
       name: "제일제당센터점",
       location: "서울 중구 동호로 330 CJ제일제당빌딩 1층",
@@ -763,7 +1036,7 @@ stores = {
       call: "02-2252-2876",
     },
   ],
-  대전:[
+  대전: [
     {
       name: "대전월평계룡점",
       location: "대전 서구 월평로 46 1층",
@@ -835,7 +1108,7 @@ stores = {
       call: "042-721-9081",
     }
   ],
-  대구:[
+  대구: [
     {
       name: "대구달성공원역점",
       location: "대구 중구 달성로 123 달성파크푸르지오힐스테이트 상가 1층 102호",
@@ -862,7 +1135,7 @@ stores = {
       call: "없음",
     }
   ],
-  청주:[
+  청주: [
     {
       name: "청주율량점",
       location: "충북 청주시 청원구 율봉로 178 1층",
@@ -889,7 +1162,7 @@ stores = {
       call: "없음",
     },
   ],
-  인천:[
+  인천: [
     {
       name: "인천시청점",
       location: "인천 남동구 구월로 81 1층",
@@ -916,7 +1189,7 @@ stores = {
       call: "032-868-2124",
     },
   ],
-  부산:[
+  부산: [
     {
       name: "부산중앙대로점",
       location: "부산 중구 중앙대로 145 내일투어 1층",
@@ -943,7 +1216,7 @@ stores = {
       call: "없음",
     },
   ],
-  울산:[
+  울산: [
     {
       name: "울산삼산점",
       location: "울산 남구 삼산중로48번길 13 1층",

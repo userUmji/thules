@@ -102,9 +102,18 @@ startup_box_a.forEach((box, index)=>{
   })
 })
 
-document.querySelector(".search-button").addEventListener("click",()=>{
+window.test = localStorage.getItem('test');
+// 매장 검색하기 버튼 클릭시 넘어감
+let search_button = document.querySelector(".search-button");
+if(search_button){
+  search_button.addEventListener("click",()=>{
+  // window.test = document.querySelector(".search-box-search").value;
+  localStorage.setItem("test", document.querySelector(".search-box-search").value);
   window.open("findStore.html");
 })
+}
+
+
 document.addEventListener("DOMContentLoaded", function (){
   const btn = document.querySelector(".sns-toggle-btn");
   const page2 = document.querySelector(".g-page2");

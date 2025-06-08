@@ -1,4 +1,26 @@
 window.onload = function () {
+  // 검색 결과 보여주는 리스트
+  let result_list = document.querySelector(".result-list");
+  // 검색 결과 담아두는 리스트
+  let list = [];
+  let markers = [];
+  let infowindows = [];
+  // 메인페이지에서 검색한 값이 있으면
+  if (test != "" & test.trim() != "") {
+    for (store in stores) {
+      for (st of stores[store]) {
+        if (st.name.includes(test) || st.location.includes(test)) {
+          list.push(st);
+        }
+      }
+    }
+    // 매장이 있으면 함수 실행
+    if (list.length != 0) {
+      list_view();
+      displayMarkers(list[0]);
+      result_list.firstChild.classList.add("active");
+    }
+  }
   var mapContainer = document.getElementById('map'),
     mapOption = {
       center: new kakao.maps.LatLng(37.566826, 126.9786567),
@@ -9,15 +31,10 @@ window.onload = function () {
   //var ps = new kakao.maps.services.Places();
   var infowindow = new kakao.maps.InfoWindow({ zIndex: 1 });
 
+
   // 검색하기
   let search_btn = document.querySelector(".search-btn");
   let input_search = document.querySelector(".search");
-  // 검색 결과 보여주는 리스트
-  let result_list = document.querySelector(".result-list");
-  // 검색 결과 담아두는 리스트
-  let list = [];
-  let markers = [];
-  let infowindows = [];
   // 검색 버튼 눌렀을 때
   search_btn.addEventListener("click", () => {
     // 빈 리스트로 초기화
